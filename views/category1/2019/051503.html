@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue绑定属性 绑定Html,class和style | Liuqi-vuepress</title>
+    <meta name="description" content="A simple and beautiful vuepress blog for code.">
+    <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.6af0ae30.css" as="style"><link rel="preload" href="/assets/js/app.9ea9c788.js" as="script"><link rel="preload" href="/assets/js/6.ae72997f.js" as="script"><link rel="preload" href="/assets/js/1.3d8e0fc3.js" as="script"><link rel="preload" href="/assets/js/13.b1fe37b4.js" as="script"><link rel="prefetch" href="/assets/js/10.a4ea56ab.js"><link rel="prefetch" href="/assets/js/11.4f0f3fd0.js"><link rel="prefetch" href="/assets/js/12.aff1ea1b.js"><link rel="prefetch" href="/assets/js/14.7f9f96f8.js"><link rel="prefetch" href="/assets/js/15.2f4281d9.js"><link rel="prefetch" href="/assets/js/16.9fead88b.js"><link rel="prefetch" href="/assets/js/17.afe3b0d8.js"><link rel="prefetch" href="/assets/js/18.a7382e15.js"><link rel="prefetch" href="/assets/js/19.1822891e.js"><link rel="prefetch" href="/assets/js/20.806ebeff.js"><link rel="prefetch" href="/assets/js/4.e069e546.js"><link rel="prefetch" href="/assets/js/5.d2e987db.js"><link rel="prefetch" href="/assets/js/7.283057e3.js"><link rel="prefetch" href="/assets/js/8.398b294d.js"><link rel="prefetch" href="/assets/js/9.db96912a.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.1e0f9ee6.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6af0ae30.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container"><div><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/head.png" alt="Liuqi-vuepress" class="logo"> <span class="site-name">Liuqi-vuepress</span></a> <div class="links"><div class="color-picker"><a href="#" class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="theme-options"><!----> <div class="dark-theme-options toggle-option"><label for="dark-theme-toggle">Enable Dark Theme?</label> <input id="dark-theme-toggle" type="checkbox" checked="checked"></div></div></div></div> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/category/vue.html" class="nav-link"><i class="iconfont undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/category/php.html" class="nav-link"><i class="iconfont undefined"></i>
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/category/wx-app.html" class="nav-link"><i class="iconfont undefined"></i>
+  wx-app
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.npmjs.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-npm"></i>
+  NPM
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Anders-LiuQi" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-jianshu"></i>
+  简书
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.cnblogs.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-bokeyuan"></i>
+  博客圆
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://mp.weixin.qq.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-wechat"></i>
+  WeChat
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      Category
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/category/vue.html" class="nav-link"><i class="iconfont undefined"></i>
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/category/php.html" class="nav-link"><i class="iconfont undefined"></i>
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/category/wx-app.html" class="nav-link"><i class="iconfont undefined"></i>
+  wx-app
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/timeLine/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.npmjs.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-npm"></i>
+  NPM
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://github.com/Anders-LiuQi" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.jianshu.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-jianshu"></i>
+  简书
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://blog.csdn.net" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-csdn"></i>
+  CSDN
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://www.cnblogs.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-bokeyuan"></i>
+  博客圆
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://mp.weixin.qq.com" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-wechat"></i>
+  WeChat
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue绑定属性 绑定Html,class和style</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/views/category1/2019/051503.html#_1-绑定属性" class="sidebar-link">1.绑定属性</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2019/051503.html#_2-绑定html" class="sidebar-link">2.绑定Html</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2019/051503.html#_3-绑定class和style" class="sidebar-link">3.绑定class和style</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/views/category1/2019/051503.html#_4-实例代码" class="sidebar-link">4.实例代码</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <div><main class="page reco-hide"> <div class="page-title"><h1>Vue绑定属性 绑定Html,class和style</h1> <hr> <div data-v-0b496ca7><i class="iconfont reco-account" data-v-0b496ca7><span data-v-0b496ca7>anders</span></i> <i class="iconfont reco-date" data-v-0b496ca7><span data-v-0b496ca7>2019-5-15</span></i> <!----> <i class="iconfont reco-tag tags" data-v-0b496ca7><span class="tag-item" data-v-0b496ca7>
+      vue
+    </span></i></div></div> <div class="content default"><h2 id="_1-绑定属性"><a href="#_1-绑定属性" aria-hidden="true" class="header-anchor">#</a> 1.绑定属性</h2> <blockquote><p>1.在vue中，绑定属性一般都用 <code>v-bind</code>
+2.而属性也是可以自定义的。</p></blockquote> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token operator">&lt;</span>img v-bind:src<span class="token operator">=</span><span class="token string">&quot;url&quot;</span> /<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>img :src<span class="token operator">=</span><span class="token string">&quot;url&quot;</span> /<span class="token operator">&gt;</span>
+</code></pre></div><h2 id="_2-绑定html"><a href="#_2-绑定html" aria-hidden="true" class="header-anchor">#</a> 2.绑定Html</h2> <blockquote><p>1.在vue中，绑定html用 <code>v-html</code></p></blockquote> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token operator">&lt;</span>div v-html<span class="token operator">=</span><span class="token string">&quot;h&quot;</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+</code></pre></div><h2 id="_3-绑定class和style"><a href="#_3-绑定class和style" aria-hidden="true" class="header-anchor">#</a> 3.绑定class和style</h2> <blockquote><p>1.在vue中，绑定class和style也用 <code>v-bind</code>
+2.在vue可以定义一个Boolean类型的变量绑定，决定class和style是否显示。</p></blockquote> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment">#v-bind:class  :class的使用</span>
+<span class="token operator">&lt;</span>div v-bind:class<span class="token operator">=</span><span class="token string">&quot;{'red':flag}&quot;</span><span class="token operator">&gt;</span>
+    i am div1
+<span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>div :class<span class="token operator">=</span><span class="token string">&quot;{'red':flag,'blue':!flag}&quot;</span><span class="token operator">&gt;</span>
+    i am div2
+<span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+</code></pre></div><h2 id="_4-实例代码"><a href="#_4-实例代码" aria-hidden="true" class="header-anchor">#</a> 4.实例代码</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">&quot;app&quot;</span><span class="token operator">&gt;</span>  
+      <span class="token operator">&lt;</span>h2<span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span>msg<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span>/h2<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>div v-bind:title<span class="token operator">=</span><span class="token string">&quot;title&quot;</span><span class="token operator">&gt;</span>鼠标瞄上去看一下<span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">&quot;https://xxx/xxx.gif&quot;</span> /<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+  <span class="token comment">#绑定属性 </span>
+       <span class="token operator">&lt;</span>img v-bind:src<span class="token operator">=</span><span class="token string">&quot;url&quot;</span> /<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>img :src<span class="token operator">=</span><span class="token string">&quot;url&quot;</span> /<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+        <span class="token punctuation">{</span><span class="token punctuation">{</span>h<span class="token punctuation">}</span><span class="token punctuation">}</span> 
+  <span class="token comment">#绑定html </span>
+        <span class="token operator">&lt;</span>div v-html<span class="token operator">=</span><span class="token string">&quot;h&quot;</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+  <span class="token comment">#绑定数据的另一种方法 </span>
+       <span class="token operator">&lt;</span>div v-text<span class="token operator">=</span><span class="token string">&quot;msg&quot;</span><span class="token operator">&gt;</span>
+       <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+  <span class="token comment">#v-bind:class  :class的使用</span>
+       <span class="token operator">&lt;</span>div v-bind:class<span class="token operator">=</span><span class="token string">&quot;{'red':flag}&quot;</span><span class="token operator">&gt;</span>
+        我是一个div
+       <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div :class<span class="token operator">=</span><span class="token string">&quot;{'red':flag,'blue':!flag}&quot;</span><span class="token operator">&gt;</span>
+      我是另一个div
+    <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+  <span class="token comment">#循环数据 第一个数据高量 </span>
+      <span class="token operator">&lt;</span>ul<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li v-for<span class="token operator">=</span><span class="token string">&quot;(item,key) in list&quot;</span><span class="token operator">&gt;</span>
+          <span class="token punctuation">{</span><span class="token punctuation">{</span>key<span class="token punctuation">}</span><span class="token punctuation">}</span>---<span class="token punctuation">{</span><span class="token punctuation">{</span>item<span class="token punctuation">}</span><span class="token punctuation">}</span>
+        <span class="token operator">&lt;</span>/li<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>/ul<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>ul<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>li v-for<span class="token operator">=</span><span class="token string">&quot;(item,key) in list&quot;</span>  :class<span class="token operator">=</span><span class="token string">&quot;{'red':key==0,'blue':key==1}&quot;</span><span class="token operator">&gt;</span>
+          <span class="token punctuation">{</span><span class="token punctuation">{</span>key<span class="token punctuation">}</span><span class="token punctuation">}</span>---<span class="token punctuation">{</span><span class="token punctuation">{</span>item<span class="token punctuation">}</span><span class="token punctuation">}</span>
+        <span class="token operator">&lt;</span>/li<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>/ul<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>br<span class="token operator">&gt;</span>
+  <span class="token comment">#v-bind:style  :style的使用</span>
+    <span class="token operator">&lt;</span>div class<span class="token operator">=</span><span class="token string">&quot;box&quot;</span> v-bind:style<span class="token operator">=</span><span class="token string">&quot;{'width':boxWdith+'px'}&quot;</span><span class="token operator">&gt;</span>
+      我是另一个div
+    <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span> 
+  <span class="token operator">&lt;</span>/div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/template<span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+    <span class="token function">export</span> default <span class="token punctuation">{</span>     
+      data <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  /*业务逻辑里面定义的数据*/
+        <span class="token keyword">return</span> <span class="token punctuation">{</span>
+          msg: <span class="token string">'你好vue'</span>,
+          title:<span class="token string">'我是一个title'</span>,
+          url:<span class="token string">'https://xxx/xxx.gif'</span>,
+          h:<span class="token string">'&lt;h2&gt;我是h2&lt;/h2&gt;'</span>,
+          list:<span class="token punctuation">[</span><span class="token string">'1111'</span>,<span class="token string">'2222'</span>,<span class="token string">'3333'</span><span class="token punctuation">]</span>,
+          flag:false,
+          boxWdith:500
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span>/script<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>style lang<span class="token operator">=</span><span class="token string">&quot;scss&quot;</span><span class="token operator">&gt;</span>
+  .red<span class="token punctuation">{</span>
+    color: red<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  .blue<span class="token punctuation">{</span>
+    color:blue<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  .box<span class="token punctuation">{</span>
+    height: 100px<span class="token punctuation">;</span>
+    width: 100px<span class="token punctuation">;</span>
+    background: red<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token operator">&lt;</span>/style<span class="token operator">&gt;</span> 
+</code></pre></div></div> <!----> <footer class="page-edit"><!----> <!----></footer> <!----> </main> <div class="valine-wrapper" data-v-0162251c><div id="valine" data-v-0162251c></div></div></div> <div class="back-to-ceiling" style="right:1rem;bottom:3rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;background-color:rgba(231, 234, 241,.5);display:none;" data-v-d0bfeaa4 data-v-d0bfeaa4><i class="iconfont reco-up" data-v-d0bfeaa4></i></div></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.9ea9c788.js" defer></script><script src="/assets/js/6.ae72997f.js" defer></script><script src="/assets/js/1.3d8e0fc3.js" defer></script><script src="/assets/js/13.b1fe37b4.js" defer></script>
+  </body>
+</html>
